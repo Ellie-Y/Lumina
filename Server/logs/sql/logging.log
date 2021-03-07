@@ -1,0 +1,48 @@
+[07-03-2021 20:02:16] [DEBUG] sql - Executing (default): CREATE TABLE IF NOT EXISTS `Users` (`id` INTEGER NOT NULL auto_increment , `firstName` VARCHAR(255) NOT NULL, `lastName` VARCHAR(255) NOT NULL, `favourite_movies` VARCHAR(255), `authenticated` TINYINT(1) NOT NULL, `createdAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+
+[07-03-2021 20:02:16] [DEBUG] sql - Executing (default): SHOW FULL COLUMNS FROM `Users`;
+
+[07-03-2021 20:02:16] [DEBUG] sql - Executing (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'Users' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='movie-app' AND REFERENCED_TABLE_NAME IS NOT NULL;
+
+[07-03-2021 20:02:16] [DEBUG] sql - Executing (default): ALTER TABLE `Users` CHANGE `firstName` `firstName` VARCHAR(255) NOT NULL;
+
+[07-03-2021 20:02:17] [DEBUG] sql - Executing (default): ALTER TABLE `Users` CHANGE `lastName` `lastName` VARCHAR(255) NOT NULL;
+
+[07-03-2021 20:02:17] [DEBUG] sql - Executing (default): ALTER TABLE `Users` CHANGE `favourite_movies` `favourite_movies` VARCHAR(255);
+
+[07-03-2021 20:02:17] [DEBUG] sql - Executing (default): ALTER TABLE `Users` CHANGE `authenticated` `authenticated` TINYINT(1) NOT NULL;
+
+[07-03-2021 20:02:17] [DEBUG] sql - Executing (default): ALTER TABLE `Users` CHANGE `createdAt` `createdAt` DATETIME NOT NULL;
+
+[07-03-2021 20:02:17] [DEBUG] sql - Executing (default): SHOW INDEX FROM `Users`
+
+[07-03-2021 20:02:17] [DEBUG] sql - Executing (default): INSERT INTO `Users` (`id`,`firstName`,`lastName`,`favourite_movies`,`authenticated`,`createdAt`) VALUES (NULL,'Anona','Cruz','tt0848228,tt4154756,tt2395427,tt4154796',true,'2021-03-07 20:02:17'),(NULL,'Camilla','Sayer','tt4154756,tt10515848,tt0120575',false,'2021-03-07 20:02:17'),(NULL,'Ganesh','Zentai','tt0287871,tt2975590,tt0103776,tt4116284,tt2313197',false,'2021-03-07 20:02:17'),(NULL,'Vivien','Straub','tt0926084,tt0417741',false,'2021-03-07 20:02:17'),(NULL,'Bernardita','Bishop','tt0389860',false,'2021-03-07 20:02:17');
+
+[07-03-2021 20:02:28] [DEBUG] sql - Executing (default): SELECT count(*) AS `count` FROM `Users` AS `Users`;
+
+[07-03-2021 20:02:28] [DEBUG] sql - Executing (default): SELECT `id`, `firstName`, `lastName`, `favourite_movies`, `authenticated`, `createdAt` FROM `Users` AS `Users`;
+
+[07-03-2021 20:02:49] [DEBUG] sql - Executing (default): UPDATE `Users` SET `id`=?,`firstName`=?,`lastName`=?,`favourite_movies`=?,`authenticated`=?,`createdAt`=? WHERE `id` = ?
+
+[07-03-2021 20:02:49] [DEBUG] sql - Executing (default): UPDATE `Users` SET `id`=?,`firstName`=?,`lastName`=?,`favourite_movies`=?,`authenticated`=?,`createdAt`=? WHERE `id` = ?
+
+[07-03-2021 20:03:51] [DEBUG] sql - Executing (default): SELECT count(*) AS `count` FROM `Users` AS `Users`;
+
+[07-03-2021 20:03:51] [DEBUG] sql - Executing (default): SELECT `id`, `firstName`, `lastName`, `favourite_movies`, `authenticated`, `createdAt` FROM `Users` AS `Users`;
+
+[07-03-2021 20:04:15] [DEBUG] sql - Executing (default): SELECT count(*) AS `count` FROM `Users` AS `Users`;
+
+[07-03-2021 20:04:15] [DEBUG] sql - Executing (default): SELECT `id`, `firstName`, `lastName`, `favourite_movies`, `authenticated`, `createdAt` FROM `Users` AS `Users`;
+
+[07-03-2021 20:08:11] [DEBUG] sql - Executing (default): SELECT count(*) AS `count` FROM `Users` AS `Users`;
+
+[07-03-2021 20:08:11] [DEBUG] sql - Executing (default): SELECT `id`, `firstName`, `lastName`, `favourite_movies`, `authenticated`, `createdAt` FROM `Users` AS `Users`;
+
+[07-03-2021 20:08:18] [DEBUG] sql - Executing (default): SELECT count(*) AS `count` FROM `Users` AS `Users`;
+
+[07-03-2021 20:08:18] [DEBUG] sql - Executing (default): SELECT `id`, `firstName`, `lastName`, `favourite_movies`, `authenticated`, `createdAt` FROM `Users` AS `Users`;
+
+[07-03-2021 20:11:41] [DEBUG] sql - Executing (default): SELECT count(*) AS `count` FROM `Users` AS `Users`;
+
+[07-03-2021 20:11:41] [DEBUG] sql - Executing (default): SELECT `id`, `firstName`, `lastName`, `favourite_movies`, `authenticated`, `createdAt` FROM `Users` AS `Users`;
+

@@ -64,10 +64,11 @@ function App() {
   };
 
   // Enter to add a new movie by movie ID
-  const handleChange = (e) => {
+  const addMovie = (e) => {
     if (e.key === "Enter") {
       e.preventDefault();
       const newMovie = e.target.value;
+      // Doesn't check if the id match the OMDb id format
       const isExist = movieList.includes(newMovie);
       if (!isExist) {
         setMovieList([newMovie, ...movieList]);
@@ -99,7 +100,7 @@ function App() {
               <TextField
                 id='standard-basic'
                 label='Add movie by ID'
-                onKeyPress={handleChange}
+                onKeyPress={addMovie}
               />
             </form>
             <Account onChange={userChange} users={users} curUser={curUserId} />

@@ -56,7 +56,7 @@ And then all done 👍
 
 ## Preset
 
-1. There is a `authenticated` column added in data structure to achieve user authentication feature. Authenticated user is able to view other users' favourite movies but can't edit. Only their own favourite movie list can be added and removed.
+1. There is an `authenticated` column added in data structure to achieve user authentication feature. Authenticated user is able to view other users' favourite movies but can't edit. Only their own favourite movie list can be added and removed.
 
 2. New movie needs to be added via movie OMDb id on the left side input field and press enter to confirm add.
 
@@ -64,7 +64,9 @@ And then all done 👍
 
    ![](https://i.loli.net/2021/03/07/gvbpBWPnIUETtcD.png)
 
-4. All the basic quirements are fulfilled, client side framework and user authentication are added as extra bonus task.
+4. All the basic requirements are fulfilled, client side framework and user authentication are added as extra bonus task.
+
+5. The input area doesn't check if the id match the OMDb id format so please use a valid id please.
 
 ## Reflections
 
@@ -104,7 +106,9 @@ And then all done 👍
 
 2. A popup or alert to show a successful message if user removed/added a movie.
 
-3. API return data format could be simpler, dot too many 'data' here
+3. Check if the id match the OMDb id format.
+
+4. API return data format could be simpler, dot too many 'data' here
 
    ```js
    getUser().then((res) => setUsers(res.data.data.data));
