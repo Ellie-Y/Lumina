@@ -98,7 +98,7 @@ And then all done 👍
 
    To create a consistency look of an application is important!
 
-#### Next steps
+#### Improvement
 
 1. A popup or alert to show movie ID exist if user made a duplication.
 2. A popup or alert to show a successful message if user removed/added a movie.
