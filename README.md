@@ -34,7 +34,7 @@ npm run
 Go to `movie-app` folder
 
 ```
-yarn add
+yarn
 yarn start
 ```
 
