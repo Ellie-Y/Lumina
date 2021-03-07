@@ -1,4 +1,4 @@
-Lumina Learning Ltd - Graduate Software Developer Assignment
+# Lumina Learning - Assignment
 
 The front-end movie app is built by React.js and using redux to manage status. Server is built by Node.js, mysql is used as database.
 
@@ -84,7 +84,7 @@ And then all done 👍
 
    To create a consistency look of an application is important!
 
-#### Improvement
+#### Next steps
 
 1. A popup or alert to show movie ID exist if user made a duplication.
 2. A popup or alert to show a successful message if user removed/added a movie.
