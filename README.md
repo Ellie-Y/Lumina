@@ -104,7 +104,7 @@ And then all done 👍
 
 2. A popup or alert to show a successful message if user removed/added a movie.
 
-3. API return data format needs be simpler, dot too many 'data' here
+3. API return data format could be simpler, dot too many 'data' here
 
    ```js
    getUser().then((res) => setUsers(res.data.data.data));

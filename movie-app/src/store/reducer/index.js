@@ -1,4 +1,5 @@
 import { updateUser } from "../../services";
+
 export const initialState = {
   users: {},
   movies: [],
@@ -26,6 +27,7 @@ export const reducer = (state = initialState, action) => {
       const { userId, movieId, allUsers, movieList } = action.payload;
       // Get current user data
       const curUser = allUsers.find((i) => (i.id === userId ? i : false));
+      // Get new movie list
       const newList = movieList.filter((i) => i !== movieId);
       const newMovieData = {
         favourite_movies: newList.toString(),
