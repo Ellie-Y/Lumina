@@ -106,7 +106,7 @@ And then all done 👍
 
 2. A popup or alert to show a successful message if user removed/added a movie.
 
-3. Check if the id match the OMDb id format.
+3. Check if the id match the OMDb id format to prevent errors.
 
 4. API return data format could be simpler, dot too many 'data' here
 

@@ -46,3 +46,7 @@
 
 [07-03-2021 20:11:41] [DEBUG] sql - Executing (default): SELECT `id`, `firstName`, `lastName`, `favourite_movies`, `authenticated`, `createdAt` FROM `Users` AS `Users`;
 
+[07-03-2021 20:14:26] [DEBUG] sql - Executing (default): SELECT count(*) AS `count` FROM `Users` AS `Users`;
+
+[07-03-2021 20:14:26] [DEBUG] sql - Executing (default): SELECT `id`, `firstName`, `lastName`, `favourite_movies`, `authenticated`, `createdAt` FROM `Users` AS `Users`;
+
