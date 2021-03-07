@@ -1,33 +1,86 @@
-# Lumina Learning Ltd - Graduate Software Developer Assignment
-We kindly ask you to solve the task below. By solving and submitting this assignment you provide us with insights in how you solve real-world problems. What we will be looking at are topics such as: choice of technology, structuring of code, selection of 3rd party libraries, documentation etc.
+Lumina Learning Ltd - Graduate Software Developer Assignment
 
+The front-end movie app is built by React.js and using redux to manage status. Server is built by Node.js, mysql is used as database.
 
-## The task
-- Build a service with PHP or JavaScript (NodeJs as webserver) as the server side language
-- Use MySQL, MariaDB, PostgreSQL, SQL Server or SQLite as the database
+## Getting Started
 
-Build a single page to show everyone's favourite movies from database, it should at least show movie <u>**Title, Poster, and Plot synopsis**</u> using [OMDb API](https://www.omdbapi.com) or any other public movie API that supports IMDb ID (e.g. tt8526872)
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-It should also be able to <u>**add or remove list of favourite movies**</u>. (Add via IMDb ID)
+### How to run it
 
-Please use the data set provided in the SQL dump in this repo as a base.
-You can change original asset that you think will make the solution better.
-You are allowed to use any library or framework to help you with the task.
+#### Server:
 
-## Bonus task
-You are not required to complete all of the bonus tasks, but great if you do! We may want to discuss your approach to the bonus tasks during interview so please think of your approach to these challenges even if you do not complete them.
+Go to `db.js` file, change the code and connect to your local database
 
-- Use client side framework such as AngularJS, Angular, ReactJS, Vue, etc.
-- Add simple authentication for any user (or all users) and only authenticated user could **<u>view or edit</u>** their favourite movies. You could adjust the database structure if needed.
-- Add unit tests
-- Any other improvement or modification (please add it into the readme and explain your reasoning of the improvement or modification)
+```js
+const sequelize = new Sequelize("[database]", "[username]", "[password]", {
+  host: "localhost",
+  dialect: "mysql",
+  logging: (msg) => {
+    sqlLogger.debug(msg);
+  },
+});
+```
 
-## Expectations
-Make a copy of this repo. Solve the task. Push your code to a public repo, and send us the link as a reply to our email.
+ Open `Server` folder in terminal and run the commands below
 
-Your solution should include a short readme describing your assumptions regarding the task, technology choice, your solution, how to use/test it and any final considerations such as known errors, limitation, something you struggle with, next steps, security concerns etc. 
+```
+npm install
+npm run
+```
 
-Don't worry we are not expecting this thing to be perfect.
+#### Movie app:
 
-## Note
-To get an API key in [OMDb API](https://www.omdbapi.com), you will need to register with your name and email address. If you do not constent to give such details to OMDb API, please let us know and we will happily give you an API key for this assignment.
+Go to `movie-app` folder
+
+```
+yarn add
+yarn start
+```
+
+And then all done 👍
+
+## Preset
+
+1. There is a `authenticated` column added in data structure to achieve user authentication feature. Authenticated user is able to view other users' favourite movies but can't edit. Only their own favourite movie list can be added and removed.
+
+2. New movie needs to be added via movie OMDb id on the left side input field and press enter to confirm add.
+
+3. The user profile on the right is to switch account.
+
+   ![](https://i.loli.net/2021/03/07/gvbpBWPnIUETtcD.png)
+
+4. All the basic quirements are fulfilled, client side framework and user authentication are added as extra bonus task.
+
+## Reflections
+
+#### Server & Database
+
+1. **Sequelize Used** 
+
+   A promise-based Node.js ORM to produce a repeatable set of queries which allow efficient retrieval of associated data using various fetching strategies.
+
+2. **RESTful API** 
+
+   It makes easier to know the purple of a request.
+
+3. **Log printing feature** 
+
+   Easy for troubleshooting.
+
+4. **Clean and clear file structure.**
+
+#### Front-end app
+
+1. **It meets DRY and KISS principles**
+
+   Once the code used more than twice I've wrapped it up as a separate function to be called at any point when required. The api requests have been splited to services folder which 
+
+2. **Redux used** 
+
+   Easy for data management and api requests, it makes the code easy to read and reduced the complexity.
+
+3. **Material UI libaray** 
+
+   To create a consistency look of an application is important!
+

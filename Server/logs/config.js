@@ -2,35 +2,35 @@ const log4js = require('log4js');
 const path = require('path');
 
 log4js.configure({
-  appenders: {    // 出口
+  appenders: {
     sql: {
-      type: 'datefile',   // 日志文件超出大小备份的时候后缀名会加上日期
-      filename: path.resolve(__dirname, 'sql', 'logging.log'),  // 出口为当前路径下的 sql 文件夹里面的 logging 文件
+      type: "datefile", // When log files are backed up beyond size, the date is added to the suffix name
+      filename: path.resolve(__dirname, "sql", "logging.log"), // Output 
       layout: {
-        type: 'pattern',
-        pattern: '[%d{dd-MM-yyyy hh:mm:ss}] [%p] %c - %m%n'
+        type: "pattern",
+        pattern: "[%d{dd-MM-yyyy hh:mm:ss}] [%p] %c - %m%n",
       },
-      maxLogSize: 1024 * 1024,   // 最大1MB
+      maxLogSize: 1024 * 1024,
       keepFileExt: true,
     },
     default: {
-      type: 'stdout',   // 控制台导出
-    }
+      type: "stdout",
+    },
   },
-  categories: {   
+  categories: {
     sql: {
-      appenders: ['sql'],    // 该分类使用出口 sql 的配置写入日志
-      level: 'all'
+      appenders: ["sql"], // This category uses the configuration of export sql to write logs
+      level: "all",
     },
     default: {
-      appenders: ['default'],
-      level: 'all'
-    }
-  }
+      appenders: ["default"],
+      level: "all",
+    },
+  },
 });
 
 process.on('exit', () => {
-  log4js.shutdown();  // 记录完后退出
+  log4js.shutdown(); 
 });
 
 const defaultLogger = log4js.getLogger();

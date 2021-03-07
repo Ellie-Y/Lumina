@@ -3,6 +3,8 @@ const router = express.Router();
 const userService = require("../../services/userServices");
 const sendResult = require("../utils/resultFormat");
 
+// * RESTful API is used
+
 //  Get all user data
 router.get("/", async (req, res) => {
   const type = req.query.type || "";
