@@ -101,5 +101,14 @@ And then all done 👍
 #### Improvement
 
 1. A popup or alert to show movie ID exist if user made a duplication.
+
 2. A popup or alert to show a successful message if user removed/added a movie.
+
+3. API return data format needs be simpler, dot too many 'data' here
+
+   ```js
+   getUser().then((res) => setUsers(res.data.data.data));
+   ```
+
+   
 

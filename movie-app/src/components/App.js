@@ -28,6 +28,7 @@ function App() {
   const [movieList, setMovieList] = useState(); // current user's favourite movie
   const [, dispatch] = useReducer(reducer, initialState);
 
+  // Get all the user data from database
   useEffect(() => {
     getUser().then((res) => setUsers(res.data.data.data));
   }, []);

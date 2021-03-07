@@ -1,10 +1,9 @@
 // API response format
-
-function returnError(error = 'server internal error', code = 500) {  //* 默认参数，调用时可以传参
+function returnError(error = "server internal error", code = 500) {
   return {
     code,
-    msg: error
-  }
+    msg: error,
+  };
 }
 
 function returnData(result) {
