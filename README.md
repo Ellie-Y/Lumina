@@ -74,7 +74,7 @@ And then all done 👍
 
 1. **It meets DRY and KISS principles**
 
-   Once the code used more than twice I've wrapped it up as a separate function to be called at any point when required. The api requests have been splited to services folder which 
+   Once the code used more than twice I've wrapped it up as a separate function to be called at any point when required. The api requests also have been splited to services folder to meet the KISS principle.
 
 2. **Redux used** 
 
@@ -83,4 +83,9 @@ And then all done 👍
 3. **Material UI libaray** 
 
    To create a consistency look of an application is important!
+
+#### Improvement
+
+1. A popup or alert to show movie ID exist if user made a duplication.
+2. A popup or alert to show a successful message if user removed/added a movie.
 

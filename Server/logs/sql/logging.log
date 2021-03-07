@@ -1242,3 +1242,15 @@
 
 [07-03-2021 15:32:53] [DEBUG] sql - Executing (default): SELECT `id`, `firstName`, `lastName`, `favourite_movies`, `authenticated`, `createdAt` FROM `Users` AS `Users`;
 
+[07-03-2021 15:45:44] [DEBUG] sql - Executing (default): SELECT count(*) AS `count` FROM `Users` AS `Users`;
+
+[07-03-2021 15:45:44] [DEBUG] sql - Executing (default): SELECT `id`, `firstName`, `lastName`, `favourite_movies`, `authenticated`, `createdAt` FROM `Users` AS `Users`;
+
+[07-03-2021 15:46:04] [DEBUG] sql - Executing (default): SELECT count(*) AS `count` FROM `Users` AS `Users`;
+
+[07-03-2021 15:46:04] [DEBUG] sql - Executing (default): SELECT `id`, `firstName`, `lastName`, `favourite_movies`, `authenticated`, `createdAt` FROM `Users` AS `Users`;
+
+[07-03-2021 15:54:39] [DEBUG] sql - Executing (default): SELECT count(*) AS `count` FROM `Users` AS `Users`;
+
+[07-03-2021 15:54:39] [DEBUG] sql - Executing (default): SELECT `id`, `firstName`, `lastName`, `favourite_movies`, `authenticated`, `createdAt` FROM `Users` AS `Users`;
+
