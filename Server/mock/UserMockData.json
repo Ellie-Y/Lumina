@@ -1,0 +1,32 @@
+[
+  {
+    "firstName": "Anona",
+    "lastName": "Cruz",
+    "favourite_movies": "tt0848228,tt4154756,tt2395427,tt4154796",
+    "authenticated": 1
+  },
+  {
+    "firstName": "Camilla",
+    "lastName": "Sayer",
+    "favourite_movies": "tt4154756,tt10515848,tt0120575",
+    "authenticated": 0
+  },
+  {
+    "firstName": "Ganesh",
+    "lastName": "Zentai",
+    "favourite_movies": "tt0287871,tt2975590,tt0103776,tt4116284,tt2313197",
+    "authenticated": 0
+  },
+   {
+    "firstName": "Vivien",
+    "lastName": "Straub",
+    "favourite_movies": "tt0926084,tt0417741",
+    "authenticated": 0
+  },
+   {
+    "firstName": "Bernardita",
+    "lastName": "Bishop",
+    "favourite_movies": "tt0389860",
+    "authenticated": 0
+  }
+]
