@@ -24,8 +24,15 @@ const sequelize = new Sequelize("[database]", "[username]", "[password]", {
 
  Open `Server` folder in terminal and run the commands below
 
+Install the dependency
+
 ```
 npm install
+```
+
+Run the server
+
+```
 npm run
 ```
 
@@ -33,8 +40,15 @@ npm run
 
 Go to `movie-app` folder
 
+Install the movie app dependency
+
 ```
 yarn
+```
+
+Run the front-end app
+
+```
 yarn start
 ```
 
