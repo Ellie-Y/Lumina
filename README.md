@@ -100,7 +100,7 @@ And then all done 👍
 
    To create a consistency look of an application is important!
 
-#### Improvement
+#### Improvement & next step
 
 1. A popup or alert to show movie ID exist if user made a duplication.
 
@@ -114,5 +114,6 @@ And then all done 👍
    getUser().then((res) => setUsers(res.data.data.data));
    ```
 
+5. Using TypeScript preventing errors and providing fixes before run code.
    
 
